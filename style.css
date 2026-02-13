@@ -6,10 +6,20 @@
 
 body {
   font-family: sans-serif;
+  position: relative;
 }
 
 a {
   text-decoration: none;
+}
+
+.hero-bg-video {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  z-index: -999;
 }
 
 header {
@@ -79,4 +89,15 @@ nav a:hover {
   background-color: aqua;
   display: none;
   top: 18px;
+}
+
+/* hero secrtion */
+
+main {
+  height: 76vh;
+}
+
+section {
+  height: 100vh;
+  background-color: antiquewhite;
 }
