@@ -1,0 +1,82 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 6vw;
+  height: 24vh;
+}
+
+.header-logo {
+  width: 128px;
+}
+
+nav {
+  display: flex;
+  gap: 28px;
+}
+
+nav a {
+  color: #030930;
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
+}
+
+nav a:hover {
+  color: #bf46a2;
+}
+
+.visit-store {
+  padding: 14px 30px;
+  background-color: white;
+  border-radius: 16px;
+  font-weight: bold;
+  color: #030930;
+  transition: all 0.2s ease-in-out;
+  border: 1px solid red;
+}
+
+.visit-store:hover {
+  background: linear-gradient(160deg, #6c1eb2, #d14fa0);
+  color: white;
+}
+
+.knowledge-base-link i {
+  transition: rotate 0.2s ease-in-out;
+}
+
+.knowledge-base-link:hover i {
+  rotate: 180deg;
+}
+
+.knowledge-base-link {
+  position: relative;
+}
+
+.knowledge-base-link:hover .knowledge-base-container {
+  display: block;
+}
+
+.knowledge-base-container {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  border: 2px solid blueviolet;
+  border-radius: 8px;
+  background-color: aqua;
+  display: none;
+  top: 18px;
+}
